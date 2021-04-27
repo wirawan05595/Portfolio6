@@ -10,14 +10,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
     <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <title>Document</title>
+    <title>Portfolio 61070209</title>
 </head>
 <body>
 
 
     <div class="wrapper">
-        <header>
+        
                 <nav>
                     <div class="menu-icon">
                         <i class="fa fa-bars fa-2x"></i>
@@ -26,23 +30,19 @@
                         <div class="menu">
                             <ul >
                                 <li><a href="#one"  class="btn"> HOME </a> </li>
+
                                 <li> <a href="#two" class="btn"> ABOUT </a></li>
+
                                 <li> <a href="#three" class="btn"> WORK </a></li>
+
                                 <li> <a href="#four" class="btn" > CONTACT </a></li>                     
                             </ul>
 
                         </div>
-
-
-
-
-                    
-
                 </nav>
 
 
 
-        </header>
 
 
 
@@ -50,136 +50,148 @@
     </div>
 
 
-   <!-- <header>
-
-     <a href="#one" class="menu__link"> HOME </a> 
-
-    <ul >
-        <li> <a href="#two" class="menu__link"> ABOUT </a></li>
-        <li> <a href="#three" class="menu__link"> WORK </a></li>
-        <li> <a href="#four" class="menu__link"> CONTACT </a></li>
 
 
 
-
-    </ul>
-
-
-
-   </header> -->
-    
-
-
-    
-
-             <!-- <nav class="navigation" >
-            <ul id="menu">
-
-
-
-
-                <li class="menu__item"> 
-                    <a href="#one" class="menu__link">
-                        <span class="menu__title">
-                            <span class="menu__first-word" data-hover="HOME">
-                                HOME
-                            </span>
-                        </span>
-                    </a>
-
-                    </a>
-                
-                
-                </li>
-
-                <li class="menu__item">
-                    
-                    
-                    <a href="#two" class="menu__link"> 
-                        <span class="menu__title" >
-                            <span class="menu__first-word" data-hover="ABOUT">
-                                ABOUT
-                            </span>
-                        </span>
-
-                    </a>
-                </li>
-
-
-                <li class="menu__item">
-                    
-                    
-                    <a href="#three" class="menu__link"> 
-                        <span class="menu__title" >
-                            <span class="menu__first-word" data-hover="WORK">
-                                WORK
-                            </span>
-                        </span>
-
-                    </a>
-                </li>
-
-                <li class="menu__item">
-                    
-                    
-                    <a href="#four" class="menu__link"> 
-                        <span class="menu__title" >
-                            <span class="menu__first-word" data-hover="CONTACT">
-                                CONTACT
-                            </span>
-                        </span>
-
-                    </a>
-                </li> 
-            </nav> -->
-               
-         
 
 
 <section class="parallax" >
     <a name="one">
 
-    <!-- <div class="img-ice1">
-        <div class="ice1">
-            <img src="cats.jpg" alt="">
-            <div class="info">
-                <h1> S 1 </h1>
-            </div>
-        </div>
 
-        <div class="ice1">
-            <img src="cats.jpg" alt="">
-            <div class="info">
-                <h1> S 2 </h1>
-            </div>
-        </div>
+        <div class="slider">
 
-        <div class="ice1">
-            <img src="cats.jpg" alt="">
-            <div class="info">
-                <h1> S 3 </h1>
+            <div class="iceslider fade" style="display:block;">
+                <div class="txt">
+                    <h2  >MODELER</h2>
+                </div>
+                    <img src="02-02.jpg" style="height: 100vh; width: 100vw;">
             </div>
-        </div>
 
-    </div> -->
+            <div class="iceslider fade">
+                <div class="txt">
+                    <h2 >ANIMATOR </h2>
+                </div>
+                    <img src="02-01.jpg" style="height: 100vh; width: 100vw;">
+            </div>
+
+            <div class="iceslider fade">
+                <div class="txt2">
+                    <h2  >GAME DEVELOPER</h2>
+                </div>
+                    <img src="02-03.jpg" style="height: 100vh; width: 100vw;">
+            </div>
+
+            <a class="prev" onclick="ps(-1)">&#10094;</a>
+            <a class="next" onclick="ps(1)">&#10095;</a>
+            <div class="icedot" style="text-align: center;">
+                <span class="dot" onclick="cs(1)"></span>
+                <span class="dot" onclick="cs(2)"></span>
+                <span class="dot" onclick="cs(3)"></span>
+            </div>
+
+
+
+        </div>
+         
+
+
 
     </a></section>
+
+
+
+
+
 
 <section class="parallax" >
     <a name="two">
-    <h1>LET'S GET IT DONE!</h1>
-    </a>
+
+ 
+            <div class="container">
+                <div class="content content-1">
+                    <div class="left">
+
+                        <h1 class="th1">ABOUT</h1></a>
+                        <img id="imgone" src="156716091_4001757539885425_5656131634152385393_n.jpg" >
+                    </div>
+
+                    <div class="right">
+                        <h4> ฉันชื่อ วิลาวัณย์ ใจงามเลิศวงศ์ ชื่อเล่นว่า ไอซ์ เป็นนักศึกษา คณะเทคโนโลยีสารสนเทศ 
+                            สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง รหัสนักศึกษา 61070209        
+                        </h4>
+                    </div>
+                </div>
+        
 </section>
 
-<section class="parallax" name="three">
-    <a name="three">
-    <h1>LET'S GET IT DONE!</h1>
-    </a></section>
 
-<section class="parallax" >
+
+
+<section class="parallax" style="position: relative; margin: 0;" name="three">
+
+    <a name="three">
+
+    
+    <h1 class="th2">WORK</h1>
+
+    </a>
+
+
+    <a href="#" style=" width: 100vw; height: 20vh; top: 25%; position: absolute; color: #fff; text-decoration:none;z-index: 80; " class="icea1">
+        <div class="icea12"> <div class="iceice" style="z-index: 80;"> Animation & Model by Maya </div>   </div>
+
+
+
+        <div class="iceice" style="z-index: 80;"> Animation & Model by Maya </div>
+    
+
+    </a>
+
+
+    <a href="#" style=" width: 100vw; height: 20vh; top: 45%; position: absolute;color: #fff; text-decoration:none;" class="icea2">
+        <div class="icea13"> <div class="iceice" style="z-index: 80;"> Model by Zbrush </div>   </div>
+        
+        <div class="iceice" style="z-index: 80;"> Model by Zbrush </div>
+    
+    </a>
+    <a href="#" style="width: 100vw; height: 20vh; top: 65%; position: absolute;color: #fff; text-decoration:none;" class="icea3"> 
+
+        <div class="icea14"> <div class="iceice" style="z-index: 80;"> Game by Unreal Engine </div>   </div>
+
+        
+        <div class="iceice" style="z-index: 80;"> Game by Unreal Engine</div>
+    
+    
+    </a>
+
+
+</section>
+
+
+<section class="parallax" tyle="position: relative; margin: 0;">
+
+
     <a name="four">
-    <h1>LET'S GET IT DONE!</h1>
-    </a></section>
+
+    
+        <h1 class="th3">CONTACT</h1>
+        <div class="c1">
+        <a href="https://www.facebook.com/nuuiceziiza/" class="cimg1"> <img src="c1.png" ></a>
+        <a href="https://www.instagram.com/icejungziiza/" class="cimg2"> <img src="c2.png" ></a>
+        <a href="https://line.me/ti/p/lhddTVn6az" class="cimg3"> <img src="c3.png" ></a>
+        <a href="mailto:61070209@it.kmitl.ac.th" class="cimg4"> <img src="c4.png"  ></a>
+        </div>
+
+        </a>
+
+        
+
+
+
+
+</section>
+ 
     
 <script>
 
@@ -200,121 +212,55 @@
       })
 
 
+      var MS = document.querySelectorAll('.iceslider'),
+        dot = document.querySelectorAll('.dot');
+        let coun = 1;
+        slidefun(coun);
+      let time = setInterval(autoslide, 8000);
 
-    
-// var didScroll;
-// var lastScrollTop = 0;
-// var delta = 5;
-//         var navbarHeight = 400;//$('header').outerHeight();
+      function autoslide(){
+        coun += 1;
+        slidefun(coun);
+      }
 
-//         $(window).scroll(function(event){
-//             didScroll = true;
-//         });
+      function ps(n){
+        coun += n;
+        slidefun(coun);
+        resetTime();
+      }
+      function cs(n){
+        coun = n;
+        slidefun(coun);
+        resetTime();
+      }
+      function resetTime(){
+          clearInterval(time);
+          time = setInterval(autoslide, 8000);
 
-//         setInterval(function() {
-//             if (didScroll) {
-//                 hasScrolled();
-//                 didScroll = false;
-//             }
-//         }, 250);
-
-//         function hasScrolled() {
-//             var st = $(this).scrollTop();
-
-//     // Make sure they scroll more than delta
-//     if(Math.abs(lastScrollTop - st) <= delta)
-//         return;
-
-//     // If they scrolled down past delta add class, if they scroll up remove it
-//     if (st > lastScrollTop && st > navbarHeight){
-//         // Scroll Down
-//         $('.navWrapperInner').addClass('reveal');
-//     } else {
-//         // Scroll Up
-//         if(st < lastScrollTop && st < navbarHeight) {
-//             $('.navWrapperInner').removeClass('reveal');
-//         }
-//     }
-
-//     lastScrollTop = st;
-// }
+      }
 
 
-// var fixedHeight = $(".navWrapper").outerHeight(true);
-// $(".navWrapper").css("height", fixedHeight + "px");
-// var innerMenuHeight = $(".navWrapperInner").outerHeight(true);
-    
-// var anchors = $(".sectionAnchor");
-// var disableChange = false;
-// var menuHeight;
+        function slidefun(n) {
+            let i;
+            for(i = 0; i < MS.length; i++){
+                MS[i].style.display = "none";    
+            }
 
-// $( ".pageScroller" ).on("click", function( ) {
-//     disableChange=true;
-//     $("a.pageScroller").removeClass("active"); // remove class from all nav links
-//     $(this).addClass("active"); // add to active link
-//     $('html,body').animate({scrollTop: ($("." + $(this).data("scrollto")).offset().top)-innerMenuHeight-17},1000,"easeInOutSine"); // scroll to section 
-//     window.setTimeout(function(){disableChange=false;},480);
-//   return false;
-// });
+            for(i = 0; i < dot.length; i++){
+                dot[i].classList.remove('active'); 
+            }
 
-
-
-   
-   // end 
-
-// function $$(selector, context) {
-//     context = context || document;
-//     var elements = context.querySelectorAll(selector);
-//     return Array.prototype.slice.call(elements);
-// } 
-
-// window.addEventListener("scroll", function() {
-//    var scrolledHeight= window.pageYOffset;
-//   $$(".parallax").forEach(function(el,index,array) { 
-//     var limit= el.offsetTop+ el.offsetHeight;
-//   if(scrolledHeight > el.offsetTop && scrolledHeight <= limit) {
-//     el.style.backgroundPositionY=  (scrolledHeight - el.offsetTop) /1.5+ "px";
- 
-//     } else {
-//      el.style.backgroundPositionY=  "0";
-//     }
-//      });
-// });
+            if(n > MS.length){
+                coun = 1;
+            }
+            if(n < 1){
+                coun = MS.length
+            }
+            MS[coun - 1].style.display = "block";
+            dot[coun - 1].classList.add('active');
 
 
-// var sections = $('section')
-//   , nav = $('nav')
-//   , nav_height = nav.outerHeight();
-
-// $(window).on('scroll', function () {
-//   var cur_pos = $(this).scrollTop();
-  
-//   sections.each(function() {
-//     var top = $(this).offset().top - nav_height,
-//         bottom = top + $(this).outerHeight();
-    
-//     if (cur_pos >= top && cur_pos <= bottom) {
-//       nav.find('a').removeClass('active');
-//       sections.removeClass('active');
-      
-//       $(this).addClass('active');
-//       nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-//     }
-//   });
-// });
-
-// nav.find('a').on('click', function () {
-//   var $el = $(this)
-//     , id = $el.attr('href');
-  
-//   $('html, body').animate({
-//     scrollTop: $(id).offset().top - nav_height
-//   }, 500);
-  
-//   return false;
-// });
-
-
+        }
 
     </script>
     

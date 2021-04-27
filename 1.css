@@ -6,6 +6,8 @@
   }
   html{
     scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
   }
   
   body {
@@ -17,11 +19,421 @@
     overflow-x: hidden;
 } 
   
-.img-ice1{
+/* header{
+  height: 60px;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+} */
+
+.slider{
   position: relative;
   width: 100vw;
-  height: 100vh;
+
 }
+.iceslider{
+  height: 100vh;
+  display: none;
+  overflow: hidden;
+}
+
+.prev, .next{
+
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 5vh;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  user-select: none;
+}
+
+.prev:hover, .next:hover{
+        color: red ;
+}
+.next{
+  right: 0;
+}
+.icedot{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  cursor: pointer;
+}
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+
+.th1{
+  position: absolute;
+  color: #000;
+  top: 90%;
+  left: 5%;
+  font-size: 5vw;
+  z-index: 10;
+
+}
+
+.th2{
+  position: absolute; 
+  top: -10%; 
+  z-index: 100;  
+  font-size: 5vw;
+  right: 5%;
+}
+
+.th3{
+  position: absolute; 
+  top: 290vh;
+  left: 1%;
+  font-size: 5vw;
+  z-index: 10;
+}
+.active, .dot:hover{
+  border-color: red;
+}
+.iceice{
+      padding: 50px 0;
+      font-size: 5vh;
+      z-index: 50;
+      text-decoration:none;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+}
+
+
+.icea1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-image: url("11.jpg");
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0.5;
+  
+
+  
+}
+
+.icea12{
+
+  background-image: url("2.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+}
+.iceice:hover{
+
+  opacity: 1;
+
+}
+.icea1:hover{
+
+  opacity: 1;
+
+}
+
+.icea12:hover{
+
+        opacity: 1;
+
+}
+
+
+
+.icea2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-image: url("22.jpg");
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0.5;
+  
+
+  
+}
+
+.icea13{
+
+  background-image: url("2.2.jpg");
+  background-position: center;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+}
+
+.icea2:hover{
+
+  opacity: 1;
+
+}
+
+.icea13:hover{
+
+      opacity: 1;
+
+}
+
+
+.icea3{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-image: url("33.jpg");
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0.5;
+  
+
+  
+}
+
+.icea14{
+
+  background-image: url("3.3.jpg");
+  background-position: center;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+}
+
+.icea3:hover{
+
+  opacity: 1;
+
+}
+
+.icea14:hover{
+
+      opacity: 1;
+
+}
+
+
+
+
+
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from{
+      opacity: 0.8;
+  }
+  to{
+      opacity: 1;
+  }
+
+}
+
+@keyframes fade {
+  from{
+      opacity: 0.8;
+  }
+  to{
+      opacity: 1;
+  }
+
+}
+.txt{
+  position: absolute;
+  color: #fff;
+  font-size: 5vw;
+  letter-spacing: 2px;
+  top: 75%;
+  left: 32%;
+  -webkit-animation-name: txt;
+  -webkit-animation-duration: 2s;
+  animation-name: txt;
+  animation-duration: 2s;
+  z-index: 200;
+}
+
+
+
+@-webkit-keyframes txt {
+  from{
+      left: 80%;
+  }
+  to{
+    left: 32%;
+  }
+
+}
+
+@keyframes txt {
+  from{
+    left: 80%;
+  }
+  to{
+  left: 32%;
+  }
+
+}
+
+
+.txt2{
+  flex-wrap: wrap;
+  position: absolute;
+  color: #fff;
+  letter-spacing: 2px;
+  top: 75%;
+  left: 20%;
+  font-size: 4vw;
+  -webkit-animation-name: txt2;
+  -webkit-animation-duration: 2s;
+  animation-name: txt2;
+  animation-duration: 2s;
+  z-index: 200;
+}
+
+
+
+@-webkit-keyframes txt2 {
+  from{
+      left: 30%;
+  }
+  to{
+    left: 20%;
+  }
+
+}
+
+@keyframes txt2 {
+  from{
+    left: 30%;
+  }
+  to{
+  left: 20%;
+  }
+
+}
+
+.txt h2{
+  font-weight: bold;
+  /* margin: 20px; */
+
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  /* border-bottom: 1px solid black; */
+}
+
+.content-1{
+  flex-wrap: wrap;
+  /* border: 5px solid gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.left, .right{
+  height: 100%;
+  width: calc(100%/2);
+}
+.content-1 .left img{
+  top: 20%;
+  position: relative;
+  width:50%;
+} 
+
+.right {
+  flex-wrap: wrap;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.right h4{
+  font-family: 'Kanit', sans-serif;
+  width: 60%;
+  color: #fff;
+  display: inline;
+  font-size: 2vw;
+  text-align: left;
+}
+
+#imgone:hover{
+  box-shadow: 10px 10px #fff;
+}
+
+.content-1 .left #imgone{
+  z-index: 1;
+   height: 50vh;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right h1{
+  width: 50%;
+  font-size: 2vw;
+}
+
+img{
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-animation-name: zoom initial;
+  -webkit-animation-duration: 40s;
+  animation-name: zoom inherit ;
+  animation-duration: 40s;
+}
+
+@-webkit-keyframes zoom {
+  from{
+    transform: scale(1,1);
+  }
+  to{
+    transform: scale(1.5,1.5);
+  }
+
+}
+
+@keyframes zoom {
+  from{
+    transform: scale(1,1);
+  }
+  to{
+    transform: scale(1.5,1.5);
+  }
+}
+
 
 /* .img-ice1 .ice1{
   
@@ -51,13 +463,15 @@ nav ul{
   transition: 1s;
 }
 nav.black ul{
-  background: #000;
+  background: #fff;
   opacity: 0.5;
+  
 
 }
 
 nav.black ul li a{
   opacity: 1;
+  color: #000;
   font-size: 2.5vh;
   transition: 1s;
 
@@ -89,34 +503,6 @@ nav ul li a{
 
 
 
-/* header p {
-    color: #000;
-    margin: 0;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-/* header,
-header:before {
-    background: 50% 50% / cover;
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(2);
-    z-index: -1;
-    min-height: 100vh;
-}  */
 
 .btn {
   letter-spacing: 0;
@@ -147,16 +533,14 @@ header::before {
   .parallax h1 {
     text-align: center;
     margin: 0;
-    font-size: 20%;
     letter-spacing: .2em;
-    color: red;
-
-    padding: 10rem 0;
-    mix-blend-mode: exclusion;
+    color: #fff;
+    /* padding: 10rem 0;
+    mix-blend-mode: exclusion; */
   }
   
   .parallax:nth-of-type(1) {
-    background-color: darkcyan;
+    background-color:#000;
   }
   
   .parallax:nth-of-type(1) h1 {
@@ -164,27 +548,78 @@ header::before {
   }
   
   .parallax:nth-of-type(2) {
-    background-color: red;
+    background-color:#000;
   }
   .parallax:nth-of-type(2) h1 {
     padding: 12rem 0;
   }
   
   .parallax:nth-of-type(3) {
-    background: plum;
+    background: #000;
+  }
+  .parallax:nth-of-type(3) h1 {
+    padding: 12rem 0;
   }
   
   .parallax:nth-of-type(4) {
-    background: peru;
+    background: #000;
+  }
+  .parallax:nth-of-type(4) h1 {
+    padding: 12rem 0;
+  }
+
+  .c1{   
+    position: absolute;
+    top: 350%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
   }
 
 
+  .cimg1, .cimg2, .cimg3, .cimg4{
+    height: 100%;
+    width: calc(80%/4);
+  }
+  .cimg1 img{
+
+    position: relative;
+    top: 50%;
+    width:30%;
+    height: 20%;
+  }
+
+  .cimg2 img{
+
+    position: relative;
+    top: 50%;
+    width:30%;
+    height: 20%;
+  }
+
+  .cimg3 img{
+
+    position: relative;
+    top: 50%;
+    width:30%;
+    height: 20%;
+  }
+
+  .cimg4 img{
+
+    position: relative;
+    top: 50%;
+    width:30%;
+    height: 20%;
+  }
 
   
  
 @media all and (max-width: 992px) {
 
-        nav ul {
+        /* nav ul {
           max-height: 0px;
           background: #000;
           opacity: 0.8;
@@ -246,15 +681,373 @@ header::before {
 
           opacity: 8;
 
+        } */
+        .content-1 .left img {
+          width: 80%;
+      }
+        .th1 {
+          font-size: 10vw;
+          justify-content: center;
+          align-items: center;
+          left: 30vw;
+
         }
+        .content-1 .left img {
+          top: 30%;
+        
+        }
+        .th2{
+          top: -10%;
+          font-size: 10vw;
+          height: 10vh;
+          justify-content: center;
+          align-items: center;
+          right: 28vw;
+
+        }
+
+        .th3{
+          font-size: 10vw;
+          justify-content: center;
+          align-items: center;
+          left: 30vw;
+
+
+        }
+        .icea12:hover{
+
+          opacity: 0.8;
+  
+        }
+
+        .icea13:hover{
+
+          opacity: 0.8;
+  
+        }
+
+        .icea14:hover{
+
+          opacity: 0.8;
+  
+        }
+        .txt{
+          top: 80%;
+          left: 33%;
+          font-size: 5vw;
+          -webkit-animation-name: txt;
+          -webkit-animation-duration: 2s;
+          animation-name: txt;
+          animation-duration: 2s;
+        }
+        
+        
+        
+        @-webkit-keyframes txt {
+          from{
+              left: 50%;
+          }
+          to{
+            left: 33%;
+          }
+        
+        }
+        
+        @keyframes txt {
+          from{
+            left: 50%;
+          }
+          to{
+          left: 33%;
+          }
+        
+        }
+        
+        
+        .txt2{
+          top: 80%;
+          left: 12%;
+          font-size: 5vw;
+          -webkit-animation-name: txt2;
+          -webkit-animation-duration: 2s;
+          animation-name: txt2;
+          animation-duration: 2s;
+          z-index: 200;
+        }
+        
+        
+        
+        @-webkit-keyframes txt2 {
+          from{
+              left: 20%;
+          }
+          to{
+            left: 12%;
+          }
+        
+        }
+        
+        @keyframes txt2 {
+          from{
+            left: 20%;
+          }
+          to{
+          left: 12%;
+          }
+        
+        }
+        .c1{
+          flex-wrap: wrap;
+          top: 340%; 
+          
+        }
+        .cimg1, .cimg2, .cimg3, .cimg4{
+          padding-bottom: 5%;
+          height: 100%;
+          width: calc(80%/2);
+        }
+        .cimg1 img{
+      
+          position: relative;
+          width:30%;
+          height: 20%;
+        }
+      
+        .cimg2 img{
+      
+          position: relative;
+          width:30%;
+          height: 20%;
+        }
+      
+        .cimg3 img{
+      
+          position: relative;
+          width:30%;
+          height: 20%;
+        }
+      
+        .cimg4 img{
+      
+          position: relative;
+          width:30%;
+          height: 20%;
+        }
+
+        .right h4 {
+          font-size: 3vw;
+
+      }
+
+
       }
 
 @media all and (max-width: 576px) {
+  nav ul {
+          max-height: 0px;
+          background: #fff;
+          opacity: 0.8;
+        }
+
+        nav.black ul {
+          background: #fff;
+          opacity: 0.5;
+        }
+
+        .showing {
+          
+          max-height: 34em;
+          opacity: 0.5;
+        }
+
+        .showing:hover{
+          opacity: 0.5;
+        }
+        nav ul li:hover{
+          opacity: 1;
+        }
+
+        nav ul li {
+          opacity: 0.8;
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+        }
+        nav{
+          z-index: 6000;
+        }
+
+        ul li:hover {
+          opacity: 1;
+          
+        }
+        nav ul li a:hover{
+          color: red;
+          font-size: 2.5vh;
+          opacity: 1;
+        }
+        nav ul li a{
+          color: #000;
+        }
+
+        nav.black ul li a{
+          opacity: 1;
+          color: #000;
+          font-size: 2.5vh;
+          transition: 1s;
+        
+        }
+
+        .menu-icon {
+          background: #000;
+          opacity: 0.5;
+          display: block;
+          z-index: 6000;
+        }
+
+        .menu-icon:hover{
+
+          opacity: 8;
+         
+
+        }
+
+        .menu-icon:active{
+
+          opacity: 8;
+
+        }
         .parallax {
             background-repeat: repeat;
             background-size: cover;
             width: 100vw;
             height: 100vh;
           }
+          .th1 {
+            position: absolute;
+            color: #000;
+            top: 90%;
+            font-size: 10vw;
+            z-index: 10;
+            left: 30%;
+        }
+        .left, .right{
+          height: calc(100%/2);
+           width: 100%;
+        }
+        .content-1 .left img {
+          width: 80%;
+        }
+        .content-1 .left #imgone {
+          z-index: 1;
+          height: 40vh;
+      }
+
+        .th2{
+          right: 28vw;
+
+      }
+
+      .th3 {
+        font-size: 10vw;
+        left: 20%;
+    }
+
+      .iceice {
+        padding: 70px 0;
+        font-size: 4vh;
+      }
+      .icea12:hover{
+
+        opacity: 0.8;
+
+      }
+
+      .icea13:hover{
+
+        opacity: 0.8;
+
+      }
+
+      .icea14:hover{
+
+        opacity: 0.8;
+
+      }
+
+      .txt{
+        left: 8%;
+        font-size: 10vw;
+        -webkit-animation-name: txt;
+        -webkit-animation-duration: 2s;
+        animation-name: txt;
+        animation-duration: 2s;
+      }
+      
+      
+      
+      @-webkit-keyframes txt {
+        from{
+            left: 10%;
+        }
+        to{
+          left: 8%;
+        }
+      
+      }
+      
+      @keyframes txt {
+        from{
+          left: 10%;
+        }
+        to{
+        left: 8%;
+        }
+      
+      }
+      
+      
+      .txt2{
+        top: 77%;
+        left: 12%;
+        font-size: 8vw;
+        -webkit-animation-name: txt2;
+        -webkit-animation-duration: 2s;
+        animation-name: txt2;
+        animation-duration: 2s;
+        z-index: 200;
+      }
+      
+      
+      
+      @-webkit-keyframes txt2 {
+        from{
+            left: 20%;
+        }
+        to{
+          left: 12%;
+        }
+      
+      }
+      
+      @keyframes txt2 {
+        from{
+          left: 20%;
+        }
+        to{
+        left: 12%;
+        }
+      
+      }
+      .right h4 {
+        font-size: 5vw;
+
+    }
+
+
+
+
+
         }
 
