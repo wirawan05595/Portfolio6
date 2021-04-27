@@ -1,0 +1,723 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+    color: #fff;
+  }
+  html{
+      background-color: black;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  .slider{
+    position: relative;
+    width: 100vw;
+  
+  }
+  .iceslider{
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+
+    
+  }
+
+  .fade{
+    -webkit-animation-name: txt;
+    -webkit-animation-duration: 2s;
+    animation-name: txt;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+
+}
+
+@keyframes fade {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+
+}
+
+.ice1{
+    position: absolute;
+    color: #fff;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    top: 25vh;
+    left: 10%;
+    font-size: 1.5vw;
+    z-index: 200;
+  }
+  .text1{
+    display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        top: 50%;
+        text-align: center;
+        font-size: 4vw;
+  }
+
+  .text2{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    top: 50%;
+    text-align: center;
+    font-size: 5vw;
+    }
+
+    .text3{
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        top: 50%;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .ice1_1{
+        justify-content: center;
+        padding: none;
+        text-align: center;
+    }
+    .ice1_1 iframe{
+        width: 80vw;
+        height: 50vh;
+
+    }
+
+
+  .ice2{
+    position: absolute;
+    top: 35vh;
+    left: 10%;
+    z-index: 200;
+  }
+  .ice2 iframe{
+      width: 30vw;
+      height: 30vh;
+  }
+
+  .ice3{
+    position: absolute;
+    color: #fff;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    top: 25vh;
+    left: 60%;
+    font-size: 1.5vw;
+    z-index: 200;
+  }
+
+  .ice3_1{
+    position: absolute;
+    color: #fff;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    top: 25vh;
+    left: 60%;
+    font-size: 1.5vw;
+    z-index: 200;
+  }
+  
+  .ice4{
+    position: absolute;
+    top: 35vh;
+    right: 10%;
+    z-index: 200;
+  }
+  .ice4 iframe{
+      width: 30vw;
+      height: 30vh;
+  }
+
+
+  
+.txt{
+  position: absolute;
+  color: #fff;
+  font-size: 1vw;
+  letter-spacing: 2px;
+  top: 10vh;
+  right: 15%;
+  /* -webkit-animation-name: txt;
+  -webkit-animation-duration: 2s;
+  animation-name: txt;
+  animation-duration: 2s; */
+  z-index: 200;
+}
+
+
+
+
+
+@-webkit-keyframes txt {
+  from{
+      left: 80%;
+  }
+  to{
+    left: 32%;
+  }
+
+}
+
+@keyframes txt {
+  from{
+    left: 80%;
+  }
+  to{
+  left: 32%;
+  }
+
+}
+
+
+  nav{
+    z-index: 5000;
+    position: fixed;
+    width: 100%;
+  }
+  nav ul{
+    list-style: none;
+    background: none;
+    overflow: hidden;
+    padding: 0;
+    text-align: right;
+    color: #fff;
+    margin: 0;
+    transition: 1s;
+  }
+  nav.black ul{
+    background: #fff;
+    opacity: 0.5;
+    
+  
+  }
+  
+  nav.black ul li a{
+    opacity: 1;
+    color: #000;
+    font-size: 2.5vh;
+    transition: 1s;
+  
+  }
+  nav ul li{
+        display: inline-block;
+        padding: 20px;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vh;
+  }
+  
+  .menu-icon{
+    width: 100%;
+    background: none;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+  
+  }
+  
+  
+  .btn {
+    letter-spacing: 0;
+  }
+  
+  .btn:hover{
+    letter-spacing: 5px;
+    font-weight:bold;
+  }
+
+  @media all and (max-width: 992px) {
+
+    nav ul {
+        max-height: 0px;
+        background: #fff;
+        opacity: 0.8;
+      }
+
+      nav.black ul {
+        background: #fff;
+        opacity: 0.5;
+      }
+
+      .showing {
+        
+        max-height: 34em;
+        opacity: 0.5;
+      }
+
+      .showing:hover{
+        opacity: 0.5;
+      }
+      nav ul li:hover{
+        opacity: 1;
+      }
+
+      nav ul li {
+        opacity: 0.8;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+      }
+      nav{
+        z-index: 6000;
+      }
+
+      ul li:hover {
+        opacity: 1;
+        
+      }
+      nav ul li a:hover{
+        color: red;
+        font-size: 2.5vh;
+        opacity: 1;
+      }
+      nav ul li a{
+        color: #000;
+      }
+
+      nav.black ul li a{
+        opacity: 1;
+        color: #000;
+        font-size: 2.5vh;
+        transition: 1s;
+      
+      }
+
+      .menu-icon {
+        background: #000;
+        opacity: 0.5;
+        display: block;
+        z-index: 6000;
+      }
+
+      .menu-icon:hover{
+
+        opacity: 8;
+       
+
+      }
+
+      .menu-icon:active{
+
+        opacity: 8;
+
+      }
+    .content-1 .left img {
+      width: 80%;
+  }
+    .th1 {
+      font-size: 10vw;
+      justify-content: center;
+      align-items: center;
+      left: 30vw;
+
+    }
+    .content-1 .left img {
+      top: 30%;
+    
+    }
+    .th2{
+      top: -10%;
+      font-size: 10vw;
+      height: 10vh;
+      justify-content: center;
+      align-items: center;
+      right: 28vw;
+
+    }
+
+    .th3{
+      font-size: 10vw;
+      justify-content: center;
+      align-items: center;
+      left: 30vw;
+
+
+    }
+    .icea12:hover{
+
+      opacity: 0.8;
+
+    }
+
+    .icea13:hover{
+
+      opacity: 0.8;
+
+    }
+
+    .icea14:hover{
+
+      opacity: 0.8;
+
+    }
+    .txt{
+      top: 80%;
+      left: 33%;
+      font-size: 5vw;
+      -webkit-animation-name: txt;
+      -webkit-animation-duration: 2s;
+      animation-name: txt;
+      animation-duration: 2s;
+    }
+    
+    
+    
+    @-webkit-keyframes txt {
+      from{
+          left: 50%;
+      }
+      to{
+        left: 33%;
+      }
+    
+    }
+    
+    @keyframes txt {
+      from{
+        left: 50%;
+      }
+      to{
+      left: 33%;
+      }
+    
+    }
+    
+    
+    .txt2{
+      top: 80%;
+      left: 12%;
+      font-size: 5vw;
+      -webkit-animation-name: txt2;
+      -webkit-animation-duration: 2s;
+      animation-name: txt2;
+      animation-duration: 2s;
+      z-index: 200;
+    }
+    
+    
+    
+    @-webkit-keyframes txt2 {
+      from{
+          left: 20%;
+      }
+      to{
+        left: 12%;
+      }
+    
+    }
+    
+    @keyframes txt2 {
+      from{
+        left: 20%;
+      }
+      to{
+      left: 12%;
+      }
+    
+    }
+    .text1{
+        font-size: 5vw;
+        padding-top: 10%;
+    }
+    .text3{
+        padding-top: 10%;
+        font-size: 5vw;
+
+    }
+    
+    .ice1{
+        font-size: 3vw;
+        left: 25%;
+    }
+      .ice2 iframe{
+          width: 50vw;
+          height: 30vh;
+      }
+      .ice2{
+        left: 25%;
+
+      }
+      .ice3{
+        top: 70vh;
+        left: 20%;
+        font-size: 3vw;
+      }
+
+      .ice4 iframe{
+        width: 50vw;
+        height: 30vh;
+    }
+    .ice4{
+      left: 25%;
+      top: 80vh;
+    }
+    .ice3_1{
+        font-size: 4vw;
+        top: 70vh;
+        left: 25%;
+    }
+      
+
+   
+
+  }
+
+@media all and (max-width: 576px) {
+nav ul {
+      max-height: 0px;
+      background: #fff;
+      opacity: 0.8;
+    }
+
+    nav.black ul {
+      background: #fff;
+      opacity: 0.5;
+    }
+
+    .showing {
+      
+      max-height: 34em;
+      opacity: 0.5;
+    }
+
+    .showing:hover{
+      opacity: 0.5;
+    }
+    nav ul li:hover{
+      opacity: 1;
+    }
+
+    nav ul li {
+      opacity: 0.8;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+    }
+    nav{
+      z-index: 6000;
+    }
+
+    ul li:hover {
+      opacity: 1;
+      
+    }
+    nav ul li a:hover{
+      color: red;
+      font-size: 2.5vh;
+      opacity: 1;
+    }
+    nav ul li a{
+      color: #000;
+    }
+
+    nav.black ul li a{
+      opacity: 1;
+      color: #000;
+      font-size: 2.5vh;
+      transition: 1s;
+    
+    }
+
+    .menu-icon {
+      background: #000;
+      opacity: 0.5;
+      display: block;
+      z-index: 6000;
+    }
+
+    .menu-icon:hover{
+
+      opacity: 8;
+     
+
+    }
+
+    .menu-icon:active{
+
+      opacity: 8;
+
+    }
+    .parallax {
+        background-repeat: repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+      }
+      .th1 {
+        position: absolute;
+        color: #000;
+        top: 90%;
+        font-size: 10vw;
+        z-index: 10;
+        left: 30%;
+    }
+    .left, .right{
+      height: calc(100%/2);
+       width: 100%;
+    }
+    .content-1 .left img {
+      width: 80%;
+    }
+    .content-1 .left #imgone {
+      z-index: 1;
+      height: 40vh;
+  }
+
+    .th2{
+      right: 28vw;
+
+  }
+
+  .th3 {
+    font-size: 10vw;
+    left: 20%;
+}
+
+  .iceice {
+    padding: 70px 0;
+    font-size: 4vh;
+  }
+  .icea12:hover{
+
+    opacity: 0.8;
+
+  }
+
+  .icea13:hover{
+
+    opacity: 0.8;
+
+  }
+
+  .icea14:hover{
+
+    opacity: 0.8;
+
+  }
+
+  .txt{
+    left: 8%;
+    font-size: 10vw;
+    -webkit-animation-name: txt;
+    -webkit-animation-duration: 2s;
+    animation-name: txt;
+    animation-duration: 2s;
+  }
+  
+  
+  
+  @-webkit-keyframes txt {
+    from{
+        left: 10%;
+    }
+    to{
+      left: 8%;
+    }
+  
+  }
+  
+  @keyframes txt {
+    from{
+      left: 10%;
+    }
+    to{
+    left: 8%;
+    }
+  
+  }
+  
+  
+  .txt2{
+    top: 77%;
+    left: 12%;
+    font-size: 8vw;
+    -webkit-animation-name: txt2;
+    -webkit-animation-duration: 2s;
+    animation-name: txt2;
+    animation-duration: 2s;
+    z-index: 200;
+  }
+  
+  
+  
+  @-webkit-keyframes txt2 {
+    from{
+        left: 20%;
+    }
+    to{
+      left: 12%;
+    }
+  
+  }
+  
+  @keyframes txt2 {
+    from{
+      left: 20%;
+    }
+    to{
+    left: 12%;
+    }
+  
+  }
+  .right h4 {
+    font-size: 5vw;
+}
+
+.text1 {
+    font-size: 5vw;
+    padding-top: 20%;
+    
+}
+.ice1 {
+    font-size: 4vw;
+    left: 18%;
+}
+.ice3 {
+    top: 70vh;
+    left: 10%;
+    font-size: 4vw;
+}
+.text2 {
+    padding-top: 20%;
+    font-size: 10vw;
+}
+.text3{
+    padding-top: 25%;
+    font-size: 7vw;
+}
+.ice3_1{
+    top: 75vh;
+    font-size: 5vw;
+}
+
+
+    }
+

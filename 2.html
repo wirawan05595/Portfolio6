@@ -1,0 +1,180 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+    <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>WORK 61070209</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+
+                <div class="menu">
+                    
+                    <ul >
+                        
+                        <li style="float: left;"><a href="index.html"  class="btn"> HOME </a> </li>
+                        <li> <a class="btn" onclick="slidefun(1)"> Animation & Model by Maya </a></li>
+
+                        <li> <a  class="btn" onclick="slidefun(2)"> Model by Zbrush </a></li>
+
+                        <li> <a  class="btn" onclick="slidefun(3)"> Game by Unreal Engine </a></li>                     
+                    </ul>
+
+                </div>
+        </nav>
+
+        <div class="slider">
+
+
+            <div class="iceslider fade" style="display:block; background-color: #000; width: 100%; height: 100%;">
+
+                
+                    <h2 class="text1">Animation & Model by Maya</h2>      
+            
+
+                <div style="color: honeydew; " class="ice1" >
+                        อนิเมชั่นเรื่องสั้นในหัวข้อโควิด-19      
+                </div>
+
+                     <div class="ice2">
+                        <iframe src="https://www.youtube.com/embed/9xE9keviGzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> 
+
+                   
+
+
+                     <div style="color: honeydew;" class="ice3">
+                         รวมอนิเมชั่นและโมเดลจากโปรแกรม MAYA    
+
+                    </div>
+
+                    <div class="ice4">
+                        <iframe  src="https://www.youtube.com/embed/imln8J3OQyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>  
+
+
+                </div>
+                </div>
+            </div>
+
+
+
+
+                
+               
+
+           
+
+
+            <div class="iceslider fade" style="display:block; background-color: #000; width: 100%; height: 100%;">
+
+                
+                <h2 class="text2">Model by Zbrush</h2>
+
+                <div  class="ice1_1" >
+
+                    <iframe src="https://www.youtube.com/embed/prII7bO5Vz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+            </div>
+
+                
+
+
+
+                </div>
+                    
+
+
+            
+
+
+        <div class="iceslider fade" style="display:block; background-color: #000; width: 100%; height: 100%;">
+
+                
+                    <h2 class="text3">Game by Unreal Engine</h2>      
+            
+
+                <div style="color: honeydew; " class="ice1" >
+                        ร่วมพัฒนา<br>เกมonline multiplayer ผ่านระบบ Steam      
+                </div>
+
+                     <div class="ice2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/T6y8VZVgCIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> 
+
+                   
+
+
+                     <div style="color: honeydew;" class="ice3_1">
+                          Map Game 
+                    </div>
+
+                    <div class="ice4">
+                        <iframe  src="https://www.youtube.com/embed/cdalEKz5uoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>  
+
+
+                </div>
+                </div>
+            </div>
+
+
+
+        <script>
+
+$(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+            
+var MS = document.querySelectorAll('.iceslider');
+        
+        let coun = 1;
+        slidefun(coun);
+        function slidefun(n) {
+            let i;
+            for(i = 0; i < MS.length; i++){
+                MS[i].style.display = "none";    
+            }
+                coun = n;
+            MS[coun - 1].style.display = "block";
+            dot[coun - 1].classList.add('active');
+
+
+        }
+
+        </script>
+    
+</body>
+</html>
